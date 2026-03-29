@@ -1,9 +1,6 @@
-# Tsundere-Model-RLHF-Finetuning
-Fine-tuning Qwen2.5 with SFT and DPO for Character Roleplay.
-
 # Tsundere-RLHF-Finetuning
 
-基于 Qwen2.5 (或你使用的模型) 的角色扮演大模型微调项目。该项目实现了从数据清洗、SFT (监督微调) 到 DPO (直接偏好优化) 对齐的完整流程。
+基于 Qwen2.5 开发的角色扮演大模型微调项目。由于设备首先，该项目使用 RTX 4070 显卡 12G 显存对从数据清洗、SFT (监督微调) 到 DPO (直接偏好优化) 对齐的完整流程。
 
 ## 🎯 项目目标
 
