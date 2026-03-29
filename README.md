@@ -41,25 +41,27 @@ Tsundere-RLHF-Finetuning/
 ├── LICENSE                    
 ├── README.md                  
 └── requirements.txt           
+```
 
+## 🚀 快速开始
 
-🚀 快速开始
-1. 环境配置
-建议使用 Python 3.10+ 环境，推荐使用 conda 或 venv 创建独立虚拟环境。
-bash
+### 1. 环境配置
+建议使用 Python 3.10+ 环境，推荐使用 `conda` 或 `venv` 创建独立虚拟环境。
 
+```bash
 # 创建并激活 conda 环境 (示例)
 conda create -n tsundere python=3.10
 conda activate tsundere
 
 # 安装依赖
 pip install -r requirements.txt
+```
 
-2. 数据预处理
-项目中包含了原始数据清洗和格式转换脚本，运行以下命令以准备训练数据：
-bash
+### 2. 数据预处理
+运行以下命令以准备训练数据：
 
-# 1. 清洗原始数据 (如果有脏数据)
+```bash
+# 1. 清洗原始数据
 python scripts/data_clean.py
 
 # 2. 将 JSON 数据转换为训练所需的 JSONL 格式
@@ -70,23 +72,26 @@ python scripts/combine_data_SFT.py
 
 # 4. 混合 DPO 偏好对数据
 python scripts/mix_data_DPO.py
+```
 
-3. 模型训练
+### 3. 模型训练
 训练脚本已封装好，直接运行即可：
-bash
 
+```bash
 # 训练 SFT 模型
 python scripts/train_sft.py
 
 # 基于 SFT 检查点，继续训练 DPO 模型
 python scripts/train_dpo.py
+```
 
-4. 推理与测试
+### 4. 推理与测试
 训练完成后，可以使用测试脚本查看生成效果：
-bash
 
+```bash
 # SFT 模型测试
 python test/SFT_test.py
 
 # DPO 模型测试
 python test/DPO_test.py
+```
