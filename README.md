@@ -15,6 +15,7 @@
 
 ## 📂 项目结构
 
+```text
 Tsundere-RLHF-Finetuning/
 ├── DPO_data/                    # DPO 训练数据目录
 │   ├── DPO_data1.json           
